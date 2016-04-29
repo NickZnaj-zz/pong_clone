@@ -10,6 +10,9 @@
   <body>
     <h1 id="header"> CurveBall!!</h1>
     <style>
+      body {
+        background: black;
+      }
       #game-canvas {
         display: block;
         font-family: 'Press Start 2P';
@@ -22,11 +25,18 @@
         margin: 30px auto;
         text-align: center;
         font-size: 72px;
-        font-family: 'Press Start 2P';
+        /*font-family: 'Press Start 2P';*/
         padding: 30px;
+        color: #aaa;
         border: 5px dashed black;
       }
 
+      #instructions{
+        /*font-family: 'Press Start 2P';*/
+        text-align: center;
+        padding-top: 30px;
+        color: #aaa;
+      }
 
     </style>
 
@@ -47,6 +57,9 @@
     </section> -->
 
     <canvas id="game-canvas"></canvas>
+
+    <p id="instructions">Space to begin volley!</p>
+
 
     <script type="application/javascript" src="vendor/keymaster.js"></script>
     <script type="application/javascript" src="lib/bundle.js"></script>
